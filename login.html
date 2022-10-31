@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body id="login">
+ <!-- NAVBAR SECTION START -->
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand textblue50" href="index.html">My Blog</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="blogpage.html">Blog Page</a></li>
+            <li><a class="dropdown-item" href="createPost.html">Creat Post</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="createProfile.html">Create/Edit Profile</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="singleblog.html">Single Blog</a>
+        </li>
+      </ul>
+      <form class="d-flex me-lg-2 mb-2 mb-lg-0">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-primary" type="submit">
+          Search
+        </button>
+      </form>
+      <a class="btn btn-primary px-3" href="login.html">Log in</a>
+    </div>
+  </div>
+</nav>
+
+<!-- NAVBAR SECTION END -->
+
+
+
+
+    <!-- LOGIN SECTION -->
+    <div class="container-fluid bg_light">
+      <div class="row">
+        <div class="col-md-6 order1 d-flex align-items-end h_100">
+          <img src="./image/login.svg" class="img-fluid login_img" alt="" />
+        </div>
+
+         <!-- logini-card-start -->
+
+        <div class="offset-md-1 col-md-4 py-4 order2">
+          <div class="card card_width">
+            <div class="card-body shadow">
+              <!-- LOGIN FORM -->
+              
+                <h2 class="d-block text-center loginh">Login</h2>
+                <hr class="w-50 mx-auto">
+                <form action=""></form>
+
+                <div class="mb-3 font-small">
+                  <label for="exampleInputEmail1" class="form-label"
+                    ><span class="fas fa-envelope text-primary"></span> Email
+                    </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    ><i class="fas fa-lock text-primary"></i> Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-primary w-50">
+                    Login Now
+                  </button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-end pt-3"
+                >
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label
+                      class="form-check-label text-primary"
+                      for="exampleCheck1"
+                      >Remember me</label
+                    >
+                  </div>
+                  <a href="#">Forget Password</a>
+                </div>
+              </form>
+              <!-- LOGIN FORM END -->
+          
+              <h6 class="d-block text-center pt-3">Don't have an account. <a class="fw-" href="sign-up.html">Sign Up Now</a>
+              </h6>
+              <hr>
+              <span class="d-block text-primary text-center mt-4 fs-5 fw-light">Log in with social account</span>
+              <div class="d-flex justify-content-center" >
+                  <a href=""><i class="fab fa-facebook fa-2x p-3"></i></a>
+                  <a href=""><i class="fab fa-twitter fa-2x p-3"></i></a>
+                  <a href=""><i class="fab fa-linkedin fa-2x p-3"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGIN SECTION END -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

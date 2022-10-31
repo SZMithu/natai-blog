@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="dashboard" class="bg-light bglightblue">
+   
+    <!-- NAVBAR SECTION START -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand textblue" href="index.html">My Blog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="blogpage.html">Blog Page</a></li>
+                <li><a class="dropdown-item" href="createPost.html">Create Post</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="createProfile.html">Create/Edit Profile</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="singleblog.html">Single Blog</a>
+            </li>
+          </ul>
+          <form class="d-flex me-lg-2 mb-2 mb-lg-0">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
+          <a class="btn btn-primary px-3" href="login.html">Log out</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR SECTION END -->
+
+    
+
+    <!-- BLOG-SECTION START -->
+    <div class="container-fluid bglightblue">
+    <div class="container py-2 px-md-5 pb-5">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <div class="text-center pt-4">
+            <button class="btn btn-primary p-2 px-3 fs-5"><i class="fa-solid fa-pen me-2"></i> Write New Article</button>
+          </div>
+          <hr class="w-50 mx-auto">
+         
+          <div class="text-center pb-3 mt-4">
+            <h2 class="fw-lighter">
+              <i class="fa-solid fa-newspaper"></i> Your Articles
+            </h2>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4 mx-md-4">
+            <div class="col">
+              <div class="card shadow h-100">
+                <img
+                  src="./image/14.jpg"
+                  class="card-img-top img_hover"
+                  alt="..."
+                />
+                <div class="card-body mx-4">
+                  <h6 class="mb-3 mt-3"> <a href="" class="teal-text text-center text-uppercase font-small text-decoration-none"> <strong>Category</strong></a> <a href="" class="text-secondary text-decoration-none pe-none font-small"> -14.09.2018</a></h6>
+                  
+                  <h3 class="card-title">Title of the news</h3>
+                  <hr />
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <a
+                    class="fw-bold text-decoration-none d-block text-end"
+                    href=""
+                    >Read More></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow h-100">
+                <img
+                  src="./image/14.jpg"
+                  class="card-img-top img_hover"
+                  alt="..."
+                />
+                <div class="card-body mx-4">
+                  <h6 class="mb-3 mt-3"> <a href="" class="teal-text text-center text-uppercase font-small text-decoration-none"> <strong>Category</strong></a> <a href="" class="text-secondary text-decoration-none pe-none font-small"> -14.09.2018</a></h6>
+                  <h3 class="card-title">Title of the news</h3>
+                  <hr />
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <a
+                    class="fw-bold text-decoration-none d-block text-end"
+                    href=""
+                    >Read More></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4 mx-md-4 mb-4 mt-1">
+            <div class="col">
+              <div class="card shadow h-100">
+                <img
+                  src="./image/14.jpg"
+                  class="card-img-top img_hover"
+                  alt="..."
+                />
+                <div class="card-body mx-4">
+                  <h6 class="mb-3 mt-3"> <a href="" class="teal-text text-center text-uppercase font-small text-decoration-none"> <strong>Category</strong></a> <a href="" class="text-secondary text-decoration-none pe-none font-small"> -14.09.2018</a></h6>
+                  <h3 class="card-title">Title of the news</h3>
+                  <hr />
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <a
+                    class="fw-bold text-decoration-none d-block text-end"
+                    href=""
+                    >Read More></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow h-100">
+                <img
+                  src="./image/14.jpg"
+                  class="card-img-top img_hover"
+                  alt="..."
+                />
+                <div class="card-body mx-4">
+                  <h6 class="mb-3 mt-3"> <a href="" class="teal-text text-center text-uppercase font-small text-decoration-none"> <strong>Category</strong></a> <a href="" class="text-secondary text-decoration-none pe-none font-small"> -14.09.2018</a></h6>
+                  <h3 class="card-title">Title of the news</h3>
+                  <hr />
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <a
+                    class="fw-bold text-decoration-none d-block text-end"
+                    href=""
+                    >Read More></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4 mx-md-4">
+            <div class="col">
+              <div class="card shadow h-100">
+                <img
+                  src="./image/14.jpg"
+                  class="card-img-top img_hover"
+                  alt="..."
+                />
+                <div class="card-body mx-4">
+                  <h6 class="mb-3 mt-3"> <a href="" class="teal-text text-center text-uppercase font-small text-decoration-none"> <strong>Category</strong></a> <a href="" class="text-secondary text-decoration-none pe-none font-small"> -14.09.2018</a></h6>
+                  <h3 class="card-title">Title of the news</h3>
+                  <hr />
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <a
+                    class="fw-bold text-decoration-none d-block text-end"
+                    href=""
+                    >Read More></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow h-100">
+                <img
+                  src="./image/14.jpg"
+                  class="card-img-top img_hover"
+                  alt="..."
+                />
+                <div class="card-body mx-4">
+                  <h6 class="mb-3 mt-3"> <a href="" class="teal-text text-center text-uppercase font-small text-decoration-none"> <strong>Category</strong></a> <a href="" class="text-secondary text-decoration-none pe-none font-small"> -14.09.2018</a></h6>
+                  <h3 class="card-title">Title of the news</h3>
+                  <hr />
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <a
+                    class="fw-bold text-decoration-none d-block text-end"
+                    href=""
+                    >Read More></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- SIDE-SECTION-START -->
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="./image/mithu_p.png" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h4 class="card-title"> <strong>Sarwar Zahan</strong></h4>
+                    <p class="h6"><i class="fa-solid fa-graduation-cap"></i> Student at <strong>W3 school</strong> </p>
+                    <p class="h6"><i class="fa-solid fa-location-dot"></i> Sagorpara, Rajshahi</p>
+                    <div class="my-4">
+                        <a href="" class=" text-decoration-none bg-dark p-2 rounded-pill text-white btn-lg icn_hover">
+                            <i class="fa-brands fa-facebook-f p-1"></i>
+                        </a>
+                        <a href="" class="text-decoration-none bg-dark p-2 rounded-pill text-white btn-lg mx-3 icn_hover">
+                            <i class="fa-brands fa-twitter"></i>
+
+                        </a>
+                        <a href="" class="text-decoration-none bg-dark p-2 rounded-pill text-white btn-lg icn_hover">
+                            <i class="fa-brands fa-linkedin-in p-1"></i>
+
+                        </a>
+                    </div>
+                    <div class="card-text">
+                        <p class="mx-2">{Bio} Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <a href="" class="btn btn-primary"><i class="fa-solid fa-user-gear"></i> Edit Profile</a>
+
+                </div>
+               
+
+            </div>
+          
+<!-- NEWESLETTER-END -->
+
+
+          <!-- POPULAR-LIST -->
+          <div class="card mt-4 shadow">
+            <div class="card-header border fw-bold mx-4 my-4 text-center">
+              POPULAR POSTS
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <img src="./image/photo13.jpg" class="img-fluid ps-4 p-2 img_popular" alt="" />
+              </div>
+              <div class="col-7">
+                <h5>Title of the news</h5>
+                <span><i class="fa-regular fa-clock text-primary"> </i></span>
+                <span> 12/06/2020</span>
+              </div>
+            </div>
+            <hr class="mx-4" />
+            <div class="row">
+              <div class="col-5">
+                <img src="./image/photo13.jpg" class="img-fluid ps-4 p-2 img_popular" alt="" />
+              </div>
+              <div class="col-7">
+                <h5>Title of the news</h5>
+                <span><i class="fa-regular fa-clock text-primary"> </i></span>
+                <span> 12/06/2020</span>
+              </div>
+            </div>
+            <hr class="mx-4" />
+            <div class="row">
+              <div class="col-5">
+                <img src="./image/photo13.jpg" class="img-fluid ps-4 p-2 img_popular" alt="" />
+              </div>
+              <div class="col-7">
+                <h5>Title of the news</h5>
+                <span><i class="fa-regular fa-clock text-primary"> </i></span>
+                <span> 12/06/2020</span>
+              </div>
+            </div>
+            <hr class="mx-4" />
+
+            <div class="row">
+              <div class="col-5">
+                <img src="./image/photo13.jpg" class="img-fluid ps-4 p-2 img_popular" alt="" />
+              </div>
+              <div class="col-7">
+                <h5>Title of the news</h5>
+                <span><i class="fa-regular fa-clock text-primary"> </i></span>
+                <span> 12/06/2020</span>
+              </div>
+            </div>
+            <hr class="mx-4" />
+
+            <div class="row">
+              <div class="col-5">
+                <img src="./image/photo13.jpg" class="img-fluid ps-4 p-2 img_popular" alt="" />
+              </div>
+              <div class="col-7">
+                <h5>Title of the news</h5>
+                <span><i class="fa-regular fa-clock text-primary"> </i></span>
+                <span> 12/06/2020</span>
+              </div>
+            </div>
+            <hr class="mx-4" />
+          </div>
+
+         
+         <!-- Report Problem -->
+          <div class="card shadow">
+            <div class="card-header m-3 border-0 fw-bold text-center">
+              Report Problem
+            </div>
+            <div class="mx-3">
+            <input type="text" class="form-control mb-3 rounded-pill" placeholder="Your Name *" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="email" class="form-control rounded-pill" placeholder="Your Email *" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="m-3">
+          <textarea class="form-control rounded-3" placeholder="Your Message *" aria-label="With textarea"></textarea>
+        </div>
+        <div class="d-grid gap-2 col-5 mx-auto mb-3">
+          <button class="btn btn-primary rounded-pill fs-md" type="button">Send Message</button>
+        </div>
+
+          </div>
+        </div>
+
+        <!-- SIDE-SECTION-END -->
+      </div>
+    </div>
+</div>
+  
+
+  <!-- BLOG-SECTION-END -->
+
+
+    <!-- footer-start -->
+    <div class="container-fluid bg-lightblue">
+      <div class="container">
+        <div class="row mt-5 footer_center">
+          <div class="col-12 col-md-3">
+            <p class="fw-bold"><span class="text-decoration-underline"> COMPA</span>NY NAME
+              </p>
+            <p class="mb-5 pe-5">
+              Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          
+          
+            </div>
+          <div class="col-12 col-md-3">
+            <p class="fw-bolder"><span class="text-decoration-underline">TOP CA</span>TEGORIES</p>
+          <div class="footer">
+            <a href="" class="d-block mb-3 text-decoration-none">Travel</a>
+            <a href="" class="d-block text-decoration-none">Life Style</a>
+            <a href="" class="d-block py-3 text-decoration-none">Photography</a>
+            <a href="" class="d-block text-decoration-none mb-5">Fashion</a>
+          </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <p class="fw-bolder"><span class="text-decoration-underline">USEFUL</span> LINKS</p>
+            <div class="footer">
+              <a href="" class="d-block mb-3 text-decoration-none">Login</a>
+              <a href="" class="d-block text-decoration-none">About us</a>
+              <a href="" class="d-block py-3  text-decoration-none">Latest Artical</a>
+              <a href="" class="d-block text-decoration-none mb-5">Contact</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 ">
+            <P class="fw-bolder"><span class="text-decoration-underline">CON</span>TACT</P>
+            <span><i class="fas fa-house mb-3 pe-3"></i> Rajshahi, bangladesh</span>
+             
+            
+            <span class="d-block"><i class="fa-solid fa-envelope pe-3"></i> info@email.com</span>
+            <span class="d-block"><i class="fa-solid fa-phone-flip py-3 pe-3"></i>+88 0123 456789</span>
+            <span class="d-block mb-3"><i class="fa-solid fa-print pe-3"></i> +01 23 456789</span>
+          </div>
+        </div>
+        <hr class="mb-3 d-md-block d-none">
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 text-center lead order2">
+          <p>© 2019 Copyright <a href="index.html" class="text-decoration-none">Natai.com</a></p>
+        </div>
+        <div class="col-12 col-md-6 text-center lead order">
+          <div class="socialLinksHeader">
+            <a class="p-4 ml-0 textBlue text-decoration-none href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!--Twitter-->
+            <a class="p-2 mx-3 textBlue text-decoration-none" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <!--Google +-->
+            <a class="p-2 textBlue text-decoration-none" href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <!--Linkedin-->
+            <a class="p-2 mx-3 textBlue text-decoration-none" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <!--Instagram-->
+            <a class="p-2  textBlue text-decoration-none" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <hr class=" w-75 d-md-none d-block mx-auto">
+          </div>
+        </div>
+    </div>
+    </div>
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
