@@ -1,5 +1,6 @@
 # Natai a blog protfolie
 ## Visite Site
+https://szmithu.github.io/natai-blog/
 
 ## About 
 This is a static portfilio blog site.
